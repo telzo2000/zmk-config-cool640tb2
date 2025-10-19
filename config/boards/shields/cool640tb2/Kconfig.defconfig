@@ -1,0 +1,7 @@
+if SHIELD_COOL640tb2
+
+config ZMK_KEYBOARD_NAME
+    default "cool640tb2"
+
+
+endif
