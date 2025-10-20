@@ -5,10 +5,10 @@
 / {
     chosen {
         zmk,kscan = &kscan0
-        zmk,physical-layout = &cool640tb2_physical_layout0;
+        zmk,physical-layout = &cool640tb2_physical_layout;
     };
     
-    cool640tb2_physical_layout0: cool640tb2_physical_layout0 {
+    cool640tb2_physical_layout: cool640tb2_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
         transform = <&default_transform>;
