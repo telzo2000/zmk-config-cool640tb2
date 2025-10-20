@@ -63,7 +63,7 @@
             , <&key_physical_attrs 100 100 1000    300     0     0     0>
             ;
     };
-    kscan0: kscan_0 {
+    kscan0: kscan {
         compatible = "zmk,kscan-gpio-charlieplex";
 
         interrupt-gpios = <&gpio1 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
