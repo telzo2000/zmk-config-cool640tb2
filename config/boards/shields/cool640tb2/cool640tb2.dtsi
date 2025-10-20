@@ -4,10 +4,11 @@
 
 / {
     chosen {
-        zmk,physical-layout = &cool640tb2_physical_layout;
+        zmk,kscan = &kscan0
+        zmk,physical-layout = &cool640tb2_physical_layout0;
     };
     
-    cool640tb2_physical_layout: cool640tb2_physical_layout {
+    cool640tb2_physical_layout0: cool640tb2_physical_layout0 {
         compatible = "zmk,physical-layout";
         display-name = "Default";
         transform = <&default_transform>;
@@ -63,13 +64,13 @@
             , <&key_physical_attrs 100 100 1000    300     0     0     0>
             ;
     };
-    kscan0: kscan {
+    kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-charlieplex";
-
+        wakeup-souce;
         interrupt-gpios = <&gpio1 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
     };
 
-    default_transform: matrix_transform {
+    default_transform: matrix_transform0 {
         compatible = "zmk,matrix-transform";
         rows = <7>;
         columns = <7>;
