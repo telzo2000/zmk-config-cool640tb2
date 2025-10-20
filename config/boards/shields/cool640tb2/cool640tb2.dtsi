@@ -4,7 +4,7 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0
+        zmk,kscan = &kscan0;
         zmk,physical-layout = &cool640tb2_physical_layout;
     };
     
@@ -64,6 +64,7 @@
             , <&key_physical_attrs 100 100 1000    300     0     0     0>
             ;
     };
+
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-charlieplex";
         wakeup-souce;
