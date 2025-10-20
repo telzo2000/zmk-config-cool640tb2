@@ -69,7 +69,7 @@
         interrupt-gpios = <&gpio1 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
     };
 
-    default_transform: matrix_transform_0 {
+    default_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
         rows = <7>;
         columns = <7>;
